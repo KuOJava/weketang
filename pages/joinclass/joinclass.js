@@ -32,7 +32,7 @@ Page({
     var teacher = e.currentTarget.dataset.teacher;
     console.log(ketang_name+ketang_daima+name+teacher);
     wx.request({
-      url: 'http://123.207.252.223/app/xuanzheketang.php?name='+name+"&ketang_name="+ketang_name+'&ketang_daima='+ketang_daima+'&teacher='+teacher,
+      url: 'https://eketang.club/app/xuanzheketang.php?name='+name+"&ketang_name="+ketang_name+'&ketang_daima='+ketang_daima+'&teacher='+teacher,
       success:function(res){
       wx.showModal({
         title: '提示',
@@ -49,7 +49,7 @@ Page({
     var text = this.data.text;
     var that = this;
     wx.request({
-      url: 'http://123.207.252.223/app/jinruketang.php?name='+name+'&pwd='+pass+'&text='+text,
+      url: 'https://eketang.club/app/jinruketang.php?name='+name+'&pwd='+pass+'&text='+text,
       success:function(res){
         console.log(res);
         that.setData({

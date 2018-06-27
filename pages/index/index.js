@@ -27,7 +27,7 @@ Page({
     var that = this;
     //向服务器请求账号的身份
     wx.request({
-      url: 'http://123.207.252.223/app/isteacher.php?name=' + name + '&pwd=' + pass,
+      url: 'https://eketang.club/app/isteacher.php?name=' + name + '&pwd=' + pass,
       success: function (res) {
         console.log(res);
         //是老师的身份则设置老师身份为真
@@ -65,7 +65,7 @@ Page({
     var pass = this.data.pass;
     var that = this;
     wx.request({
-      url: 'http://123.207.252.223/app/xianshiketang.php?name=' + name + '&pwd=' + pass,
+      url: 'https://eketang.club/app/xianshiketang.php?name=' + name + '&pwd=' + pass,
       success: function (res) {
         console.log(res);
         if (res.data == "你没有加入任何课堂") {
@@ -84,7 +84,7 @@ Page({
     var name = this.data.name;
     var pass = this.data.pass;
     wx.request({
-      url: 'http://123.207.252.223/app/isteacher.php?name='+name+'&pwd='+pass,
+      url: 'https://eketang.club/app/isteacher.php?name='+name+'&pwd='+pass,
       success:function(res){
         console.log(res);
         if(res.data=="您是老师"){
@@ -144,7 +144,7 @@ onPullDownRefresh: function(){
   var pass = this.data.pass;
   var that = this;
   wx.request({
-    url: 'http://123.207.252.223/app/xianshiketang.php?name=' + name + '&pwd=' + pass,
+    url: 'https://eketang.club/app/xianshiketang.php?name=' + name + '&pwd=' + pass,
     success: function (res) {
       console.log(res);
       that.setData({

@@ -60,7 +60,7 @@ Page({
     } else {
       if (pwd == confirm) {
         wx.request({
-          url: 'http://123.207.252.223/app/register.php?name=' + name + '&pwd=' + pwd + '&sex=' + sex + '&shenfen='+shenfen,
+          url: 'https://eketang.club/app/register.php?name=' + name + '&pwd=' + pwd + '&sex=' + sex + '&shenfen='+shenfen,
           success: function (res) {
           wx.showModal({
             title: '提示',

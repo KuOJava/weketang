@@ -18,7 +18,7 @@ Page({
     var name = this.data.name;
     var pass = this.data.password;
     wx.request({
-      url: 'http://123.207.252.223/app/login.php?name='+this.data.name+"&pwd="+this.data.password,
+      url: 'https://eketang.club/app/login.php?name='+this.data.name+"&pwd="+this.data.password,
       header:{
         'Content-Type':'application/json'
       },

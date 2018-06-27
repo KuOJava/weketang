@@ -73,7 +73,7 @@ Page({
           if (res.confirm) {
             wx.request({
               //确认提交之后，将添加的知识点制成相应格式的json数据传递给服务器，然后服务器对其进行处理。
-              url: 'http://123.207.252.223/app/addzhishidian.php?name=' + name + '&pwd=' + pwd + '&ketangname=' + ketangname + '&jsondata=' + jsondata,
+              url: 'https://eketang.club/app/addzhishidian.php?name=' + name + '&pwd=' + pwd + '&ketangname=' + ketangname + '&jsondata=' + jsondata,
               success: function (res) {
                 wx.showToast({
                   title: res.data,
@@ -101,7 +101,7 @@ Page({
     var ketangname = this.data.ketang_name;
     var that = this;
     wx.request({
-      url: 'http://123.207.252.223/app/chakanpingjia.php?ketangname=' + ketangname,
+      url: 'https://eketang.club/app/chakanpingjia.php?ketangname=' + ketangname,
       success: function (res) {
         // that.setData({
         //   'pingjiaxianshi':res.data

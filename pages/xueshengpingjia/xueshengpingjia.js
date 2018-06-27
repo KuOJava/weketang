@@ -42,7 +42,7 @@ Page({
     var zj = this.data.zhangjie;
     var that = this;
     wx.request({
-      url: 'http://123.207.252.223/app/getzhishidian.php?name='+name+'&pwd='+pwd+'&ketangname='+ketangname+'&zj='+zj,
+      url: 'https://eketang.club/app/getzhishidian.php?name='+name+'&pwd='+pwd+'&ketangname='+ketangname+'&zj='+zj,
       success:function(res){
        // console.log(res.data);
         if(res.data.length==0){
@@ -88,7 +88,7 @@ Page({
     var zj = this.data.zhangjie;
     var jsondata= this.data.tijiaopingjia;
     wx.request({
-      url: 'http://123.207.252.223/app/pingjia.php?name='+name+'&pwd='+pwd+'&ketangname='+ketangname+'&zj='+zj+'&jsondata='+JSON.stringify(jsondata),
+      url: 'https://eketang.club/app/pingjia.php?name='+name+'&pwd='+pwd+'&ketangname='+ketangname+'&zj='+zj+'&jsondata='+JSON.stringify(jsondata),
       success:function(res){
           wx.showModal({
             title: '提示',
