@@ -1,0 +1,22 @@
+<!--pages/register/register.wxml-->
+<text>输入账号</text>
+<input type='text' class='in' bindinput='inputemail'></input>
+<text>输入密码</text>
+<input type='text' class='in' bindinput='inputpass'></input>
+<text>密码验证</text>
+<input type='text' class='in' bindinput='inputconfirm'></input>
+<view>
+<text>选择性别</text>
+<radio-group bindchange='changesex'>
+<radio checked='true' value='男'>男</radio>
+<radio value='女'>女</radio>
+</radio-group>
+</view>
+<view>
+<text>选择身份</text>
+<radio-group bindchange='changeshenfen'>
+<radio checked='true' value='学生'>学生</radio>
+<radio value='老师'>老师</radio>
+</radio-group>
+</view>
+<button class='in' catchtap='tijiao'>提交</button>

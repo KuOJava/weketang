@@ -1,0 +1,5 @@
+/* pages/createclass/createclass.wxss */
+.chuangjianketang{
+ display: flex;
+ justify-content: center
+}

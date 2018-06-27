@@ -1,0 +1,14 @@
+<!--pages/index/index.wxml-->
+<button class='in' catchtap='createclass'>创建课堂</button>
+<button class='in' catchtap='joinclass'>进入课堂</button>
+<view>
+<text wx:if="{{isteacher}}">选择你的课堂添加知识点添加知识点或查看评价</text>
+<text wx:else>选择你的课堂进行评价:</text>
+<view wx:for="{{classdata}}" wx:key="item" >
+<view data-name='{{item.ketang_name}}' data-teacher='{{item.ketang_teacher}}' catchtap='selectclass' data-daima='{{item.ketang_daima}}' class='ketangxianshi'>
+<text>课程名称：{{item.ketang_name}}</text>
+<text>课程代号：{{item.ketang_daima}}</text>
+<text>课堂老师：{{item.ketang_teacher}}</text>
+</view>
+</view>
+</view>

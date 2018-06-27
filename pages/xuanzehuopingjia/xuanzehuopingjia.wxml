@@ -1,0 +1,16 @@
+<!--pages/xuanzehuopingjia/xuanzehuopingjia.wxml-->
+<view class='classhead'><text>{{ketang_name}}</text></view>
+<text>输入要添加的章节：</text>
+<input class='in' type='text' bindinput='inputzhangjie'></input>
+<text>输入要添加的知识点：</text>
+<input class='in' type='text' bindinput='inputzhishidian'></input>
+<button class='in' catchtap='addzhishidian'>增加知识点</button>
+<button class='in' catchtap='chakanpingjia'>查看评价</button>
+<view wx:for="{{pingjiaxianshi}}" wx:for-item="item" class='in'>
+<view>
+<text>章节：{{item.zhangjie}}</text>
+</view>
+<view>
+<text>掌握度：{{item.baifenbi}}%</text>
+</view>
+ </view>

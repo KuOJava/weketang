@@ -1,0 +1,10 @@
+<text>输入账号</text>
+<view class='in'>
+<input type='text' id='name' bindinput='inputname' value='{{name}}'></input>
+</view>
+<text>输入密码</text>
+<view class='in'>
+<input type='text' id='password' bindinput='inputpass' value='{{password}}'></input>
+</view>
+<button class='in' id='loginbt' catchtap='loginbt'>登录</button>
+<button class='in' id='register' catchtap='registerclick'>注册</button>

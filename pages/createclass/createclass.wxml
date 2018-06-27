@@ -1,0 +1,14 @@
+<!--pages/createclass/createclass.wxml-->
+<view class='chuangjianketang'>
+<text>创建课堂</text>
+</view>
+<view>
+<text>课堂名称：</text>
+<input class='in' type='text' bindinput='inputclassname'></input>
+</view>
+<view><text>课堂代号：</text>
+<input class='in' type='text' bindinput='inputclassnum'>
+</input>
+</view>
+<button catchtap='querentijiao'>确认提交</button>
+

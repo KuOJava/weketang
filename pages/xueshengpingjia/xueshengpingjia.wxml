@@ -1,0 +1,20 @@
+<!--pages/xueshengpingjia/xueshengpingjia.wxml-->
+<view class='classhead'><text>学生评价系统</text></view>
+<view class='classhead'><text>{{ketang_name}}</text></view>
+<view><text>输入你要评价的章节：</text>
+<input type='text' bindinput='inputzhangjie' class='in'></input>
+<button class='in' catchtap='queding'>选择章节</button></view>
+<block wx:for="{{zhishidian}}">
+<view class='in'>
+<text>知识点：{{item}}</text>
+<radio-group bindchange='radioChange' data-zs-name='{{item}}' data-zs-index='{{index}}'>
+<radio value='0%'>0%</radio>
+<radio value='10%'>10%</radio>
+<radio value='30%'>30%</radio>
+<radio value='50%'>50%</radio>
+<radio value='80%'>80%</radio>
+<radio value='100%'>100%</radio>
+</radio-group>
+</view>
+</block>
+<button wx:if="{{havezhishidian}}" catchtap='pingjiaclick'>提交评价</button>

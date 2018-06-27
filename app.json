@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/index/index",
+    "pages/createclass/createclass",
+    "pages/joinclass/joinclass",
+    "pages/xuanzehuopingjia/xuanzehuopingjia",
+    "pages/xueshengpingjia/xueshengpingjia"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "e课堂反馈",
+    "navigationBarTextStyle": "black"
+  }
+}

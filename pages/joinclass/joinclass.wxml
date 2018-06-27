@@ -1,0 +1,11 @@
+<!--pages/joinclass/joinclass.wxml-->
+<text>输入课堂信息</text>
+<input class='in' bindinput='inputtext'></input>
+<button catchtap='findclass' class='in'>查找课堂</button>
+<view wx:for="{{classdata}}">
+<view data-name='{{item.ketang_name}}' data-teacher='{{item.ketang_teacher}}' class='in' catchtap='selectclass' data-daima='{{item.ketang_daima}}'>
+<text>课程名称：{{item.ketang_name}}</text>
+<text>课程代号：{{item.ketang_daima}}</text>
+<text>课堂老师：{{item.ketang_teacher}}</text>
+</view>
+</view>

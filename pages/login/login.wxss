@@ -1,0 +1,8 @@
+/* pages/login.wxss */
+.in{
+  border: 1px dotted #000000;
+  margin: 30rpx
+}
+text{
+  margin:30rpx;
+}

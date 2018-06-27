@@ -1,0 +1,10 @@
+/* pages/index/index.wxss */
+
+.ketangxianshi {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 1px dotted #000;
+  margin: 30rpx;
+}
